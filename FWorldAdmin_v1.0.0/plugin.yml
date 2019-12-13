@@ -1,0 +1,47 @@
+﻿name: FWorldAdmin
+main: FWorldAdmin\FWorldAdmin
+version: 1.0.0
+api: 3.0.0
+load: POSTWORLD
+author: FillAmeaPixel
+
+commands:
+
+ w:
+  description: Change world
+  
+ lw:
+  permission: FWorldAdmin.lw
+  description: FWorldAdmin
+
+ load:
+  permission: FWorldAdmin.load
+  description: FWorldAdmin
+
+ unload:
+  permission: FWorldAdmin.unload
+  description: FWorldAdmin
+ 
+ worldadmin:
+ permission: FWorldAdmin.help
+ description: commandsHelp
+
+  
+permissions:
+ FWorldAdmin:
+  default: op
+  description: FWorldAdmin
+  children:
+     FWorldAdmin.load:
+      default: op
+      description: FWorldAdmin
+     FWorldAdmin.unload:
+      default: op
+      description: unload a world
+     FWorldAdmin.lw:
+      default: op
+      description: see the world
+     FWorldAdmin.help:
+      default: op
+      description: HELP
+    
